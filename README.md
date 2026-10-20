@@ -87,4 +87,21 @@ Adapt the query, selected columns, connection name, and time column to your data
 1. Start InfluxDB and configure it as a data source in Grafana.
 2. Run the exporter with your `config.yaml` configuration.
 3. Create a Grafana dashboard and select the exported time-series data.
-4. Use panels to visualize values over time,
+4. Use panels to visualize values over time, compare metrics, and monitor database activity.
+
+The exact query syntax in Grafana depends on your InfluxDB version and configured query language.
+
+## Security
+
+- Do not commit production passwords, access tokens, or other sensitive credentials.
+- Protect the configuration file and restrict access to it.
+- Use encrypted credentials only as supported by the project's encryption implementation.
+- Apply least-privilege database permissions to exporter accounts.
+
+## Contributing
+
+Contributions, bug reports, and improvements are welcome. Please include relevant configuration details and test results when submitting changes.
+
+## License
+
+See the repository's license file for the applicable license terms.
